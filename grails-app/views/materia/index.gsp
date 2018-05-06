@@ -28,7 +28,11 @@
 					
 						<g:sortableColumn property="codigo" title="${message(code: 'materia.codigo.label', default: 'Codigo')}" />
 					
+						<g:sortableColumn property="foto" title="${message(code: 'materia.foto.label', default: 'Foto')}" />
+					
 						<th><g:message code="materia.area.label" default="Area" /></th>
+					
+						<g:sortableColumn property="destacada" title="${message(code: 'materia.destacada.label', default: 'Destacada')}" />
 					
 					</tr>
 				</thead>
@@ -40,7 +44,11 @@
 					
 						<td>${fieldValue(bean: materiaInstance, field: "codigo")}</td>
 					
+						<td>${fieldValue(bean: materiaInstance, field: "foto")}</td>
+					
 						<td>${fieldValue(bean: materiaInstance, field: "area")}</td>
+					
+						<td><g:formatBoolean boolean="${materiaInstance.destacada}" /></td>
 					
 					</tr>
 				</g:each>

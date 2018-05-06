@@ -41,11 +41,27 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${materiaInstance?.foto}">
+				<li class="fieldcontain">
+					<span id="foto-label" class="property-label"><g:message code="materia.foto.label" default="Foto" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${materiaInstance?.area}">
 				<li class="fieldcontain">
 					<span id="area-label" class="property-label"><g:message code="materia.area.label" default="Area" /></span>
 					
 						<span class="property-value" aria-labelledby="area-label"><g:link controller="area" action="show" id="${materiaInstance?.area?.id}">${materiaInstance?.area?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${materiaInstance?.destacada}">
+				<li class="fieldcontain">
+					<span id="destacada-label" class="property-label"><g:message code="materia.destacada.label" default="Destacada" /></span>
+					
+						<span class="property-value" aria-labelledby="destacada-label"><g:formatBoolean boolean="${materiaInstance?.destacada}" /></span>
 					
 				</li>
 				</g:if>
