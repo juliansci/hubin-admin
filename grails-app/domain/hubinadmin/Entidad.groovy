@@ -7,8 +7,8 @@ class Entidad {
 	String direccion
 	Integer telefono
 	String email
+	String code
 	boolean activa
-	static hasMany = [areas : Area]
 
 	static constraints = {
 		cuit unique: true, size: 1..30, blank: false, nullable: false
@@ -16,7 +16,7 @@ class Entidad {
 		direccion size: 1..50, blank: true, nullable: true
 		telefono nullable: true
 		email blank: false, nullable: true, size: 1..30, email: true
-		areas nullable: true
+		code unique: true, size: 1..30, blank: false, nullable: false
 	}
 
 	static mapping = {

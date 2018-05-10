@@ -68,13 +68,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${entidadInstance?.areas}">
+				<g:if test="${entidadInstance?.code}">
 				<li class="fieldcontain">
-					<span id="areas-label" class="property-label"><g:message code="entidad.areas.label" default="Areas" /></span>
+					<span id="code-label" class="property-label"><g:message code="entidad.code.label" default="Code" /></span>
 					
-						<g:each in="${entidadInstance.areas}" var="a">
-						<span class="property-value" aria-labelledby="areas-label"><g:link controller="area" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="code-label"><g:fieldValue bean="${entidadInstance}" field="code"/></span>
 					
 				</li>
 				</g:if>

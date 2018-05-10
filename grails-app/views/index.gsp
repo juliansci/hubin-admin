@@ -93,8 +93,9 @@
 				<h2>Controles disponibles:</h2>
 				<ul>
 					<li><g:link controller="Entidad" action="index">ABM Entidades educativas</g:link></li>
-					<li><g:link controller="Area" action="index">ABM Areas de conocimiento</g:link></li>
 					<li><g:link controller="Materia" action="index">ABM Materias</g:link></li>
+					<li><g:link controller="Idioma" action="index">ABM Idiomas</g:link></li>
+					<li><g:link controller="Nivel" action="index">ABM Niveles</g:link></li>
 					<li><g:link controller="Proveedor" action="index">ABM Proveedores</g:link></li>
 					<li><g:link controller="Objetivo" action="index">ABM Objetivos</g:link></li>
 					<li><g:link controller="Publicidad" action="index">ABM Publicidades</g:link></li>

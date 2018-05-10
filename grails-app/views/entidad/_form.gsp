@@ -47,21 +47,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: entidadInstance, field: 'areas', 'error')} ">
-	<label for="areas">
-		<g:message code="entidad.areas.label" default="Areas" />
-		
+<div class="fieldcontain ${hasErrors(bean: entidadInstance, field: 'code', 'error')} required">
+	<label for="code">
+		<g:message code="entidad.code.label" default="Code" />
+		<span class="required-indicator">*</span>
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${entidadInstance?.areas?}" var="a">
-    <li><g:link controller="area" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="area" action="create" params="['entidad.id': entidadInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'area.label', default: 'Area')])}</g:link>
-</li>
-</ul>
-
+	<g:textField name="code" maxlength="30" required="" value="${entidadInstance?.code}"/>
 
 </div>
 

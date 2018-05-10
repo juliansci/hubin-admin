@@ -26,11 +26,9 @@
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'materia.nombre.label', default: 'Nombre')}" />
 					
-						<g:sortableColumn property="codigo" title="${message(code: 'materia.codigo.label', default: 'Codigo')}" />
+						<g:sortableColumn property="code" title="${message(code: 'materia.code.label', default: 'Code')}" />
 					
 						<g:sortableColumn property="foto" title="${message(code: 'materia.foto.label', default: 'Foto')}" />
-					
-						<th><g:message code="materia.area.label" default="Area" /></th>
 					
 						<g:sortableColumn property="destacada" title="${message(code: 'materia.destacada.label', default: 'Destacada')}" />
 					
@@ -42,11 +40,9 @@
 					
 						<td><g:link action="show" id="${materiaInstance.id}">${fieldValue(bean: materiaInstance, field: "nombre")}</g:link></td>
 					
-						<td>${fieldValue(bean: materiaInstance, field: "codigo")}</td>
+						<td>${fieldValue(bean: materiaInstance, field: "code")}</td>
 					
 						<td>${fieldValue(bean: materiaInstance, field: "foto")}</td>
-					
-						<td>${fieldValue(bean: materiaInstance, field: "area")}</td>
 					
 						<td><g:formatBoolean boolean="${materiaInstance.destacada}" /></td>
 					

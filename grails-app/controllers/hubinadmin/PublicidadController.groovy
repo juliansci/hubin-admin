@@ -8,14 +8,6 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class PublicidadController {
 
-	def beforeInterceptor = [action: this.&chequearUsuario]
-	def chequearUsuario() {
-		if (!session.admin) {
-			redirect(controller: 'login', action: 'index')
-			return false
-		}
-	}
-	
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {

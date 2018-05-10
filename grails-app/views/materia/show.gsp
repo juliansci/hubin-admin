@@ -32,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${materiaInstance?.codigo}">
+				<g:if test="${materiaInstance?.code}">
 				<li class="fieldcontain">
-					<span id="codigo-label" class="property-label"><g:message code="materia.codigo.label" default="Codigo" /></span>
+					<span id="code-label" class="property-label"><g:message code="materia.code.label" default="Code" /></span>
 					
-						<span class="property-value" aria-labelledby="codigo-label"><g:fieldValue bean="${materiaInstance}" field="codigo"/></span>
+						<span class="property-value" aria-labelledby="code-label"><g:fieldValue bean="${materiaInstance}" field="code"/></span>
 					
 				</li>
 				</g:if>
@@ -44,15 +44,6 @@
 				<g:if test="${materiaInstance?.foto}">
 				<li class="fieldcontain">
 					<span id="foto-label" class="property-label"><g:message code="materia.foto.label" default="Foto" /></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${materiaInstance?.area}">
-				<li class="fieldcontain">
-					<span id="area-label" class="property-label"><g:message code="materia.area.label" default="Area" /></span>
-					
-						<span class="property-value" aria-labelledby="area-label"><g:link controller="area" action="show" id="${materiaInstance?.area?.id}">${materiaInstance?.area?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
