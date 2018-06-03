@@ -28,7 +28,7 @@
 					
 						<g:sortableColumn property="code" title="${message(code: 'materia.code.label', default: 'Code')}" />
 					
-						<g:sortableColumn property="foto" title="${message(code: 'materia.foto.label', default: 'Foto')}" />
+						<th><g:message code="materia.foto.label" default="Foto" /></th>
 					
 						<g:sortableColumn property="destacada" title="${message(code: 'materia.destacada.label', default: 'Destacada')}" />
 					

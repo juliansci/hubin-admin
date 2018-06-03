@@ -25,7 +25,7 @@
 		<g:message code="materia.foto.label" default="Foto" />
 		
 	</label>
-	<input type="file" id="foto" name="foto" />
+	<g:select id="foto" name="foto.id" from="${hubinadmin.File.list()}" optionKey="id" value="${materiaInstance?.foto?.id}" class="many-to-one" noSelection="['null': '']"/>
 
 </div>
 

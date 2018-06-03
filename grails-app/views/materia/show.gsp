@@ -45,6 +45,8 @@
 				<li class="fieldcontain">
 					<span id="foto-label" class="property-label"><g:message code="materia.foto.label" default="Foto" /></span>
 					
+						<span class="property-value" aria-labelledby="foto-label"><g:link controller="file" action="show" id="${materiaInstance?.foto?.id}">${materiaInstance?.foto?.encodeAsHTML()}</g:link></span>
+					
 				</li>
 				</g:if>
 			

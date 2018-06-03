@@ -99,6 +99,7 @@
 					<li><g:link controller="Proveedor" action="index">ABM Proveedores</g:link></li>
 					<li><g:link controller="Objetivo" action="index">ABM Objetivos</g:link></li>
 					<li><g:link controller="Publicidad" action="index">ABM Publicidades</g:link></li>
+					<li><g:link controller="File" action="index">ABM Archivos</g:link></li>
 				</ul>
 			</div>
 		</div>
