@@ -36,8 +36,8 @@
 					
 						<td><g:link action="show" id="${fileInstance.id}">${fieldValue(bean: fileInstance, field: "extension")}</g:link></td>
 					
-						<td>${fieldValue(bean: fileInstance, field: "data")}</td>
-					
+						<!--<td>${fieldValue(bean: fileInstance, field: "data")}</td>-->
+
 					</tr>
 				</g:each>
 				</tbody>

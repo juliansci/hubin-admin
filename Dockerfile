@@ -1,5 +1,5 @@
 FROM java:7
-ENV GRAILS_VERSION 2.4.4
+ENV GRAILS_VERSION 2.5.2
 
 WORKDIR /usr/lib/jvm
 RUN wget https://github.com/grails/grails-core/releases/download/v$GRAILS_VERSION/grails-$GRAILS_VERSION.zip && \
