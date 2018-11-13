@@ -101,6 +101,7 @@
 <%--					<li><g:link controller="Publicidad" action="index">ABM Publicidades</g:link></li>--%>
 					<li><g:link controller="File" action="index">ABM Archivos</g:link></li>
 					<li><g:link controller="Feedback" action="index">ABM Feedback</g:link></li>
+					<li><g:link controller="Denuncia" action="index">ABM Denuncia</g:link></li>
 				</ul>
 			</div>
 		</div>

@@ -1,18 +1,20 @@
 package hubinadmin
 
-class Feedback {
+import java.util.Date;
+
+class Denuncia {
 	
-	String tipo
 	String mensaje
 	Date fecha
-	boolean leido
+	boolean resuelto
 	Alumno alumno
+	Documento documento
 
     static constraints = {
-		tipo unique: false, size: 1..255, blank: false, nullable: false
 		mensaje unique: false, size: 1..255, blank: false, nullable: false
 		fecha nullable: false
 		alumno nullable: false
+		documento nullable: false
     }
 	
 	static mapping = {
