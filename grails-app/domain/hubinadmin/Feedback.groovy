@@ -2,6 +2,7 @@ package hubinadmin
 
 class Feedback {
 	
+	Integer id
 	String tipo
 	String mensaje
 	Date fecha

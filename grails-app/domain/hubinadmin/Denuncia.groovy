@@ -4,6 +4,7 @@ import java.util.Date;
 
 class Denuncia {
 	
+	Integer id
 	String mensaje
 	Date fecha
 	boolean resuelto

@@ -26,13 +26,13 @@
 					
 						<g:sortableColumn property="cuit" title="${message(code: 'proveedor.cuit.label', default: 'Cuit')}" />
 					
-						<g:sortableColumn property="razonSocial" title="${message(code: 'proveedor.razonSocial.label', default: 'Razon Social')}" />
-					
 						<g:sortableColumn property="direccion" title="${message(code: 'proveedor.direccion.label', default: 'Direccion')}" />
 					
-						<g:sortableColumn property="telefono" title="${message(code: 'proveedor.telefono.label', default: 'Telefono')}" />
-					
 						<g:sortableColumn property="email" title="${message(code: 'proveedor.email.label', default: 'Email')}" />
+					
+						<g:sortableColumn property="razonSocial" title="${message(code: 'proveedor.razonSocial.label', default: 'Razon Social')}" />
+					
+						<g:sortableColumn property="telefono" title="${message(code: 'proveedor.telefono.label', default: 'Telefono')}" />
 					
 					</tr>
 				</thead>
@@ -42,13 +42,13 @@
 					
 						<td><g:link action="show" id="${proveedorInstance.id}">${fieldValue(bean: proveedorInstance, field: "cuit")}</g:link></td>
 					
-						<td>${fieldValue(bean: proveedorInstance, field: "razonSocial")}</td>
-					
 						<td>${fieldValue(bean: proveedorInstance, field: "direccion")}</td>
 					
-						<td>${fieldValue(bean: proveedorInstance, field: "telefono")}</td>
-					
 						<td>${fieldValue(bean: proveedorInstance, field: "email")}</td>
+					
+						<td>${fieldValue(bean: proveedorInstance, field: "razonSocial")}</td>
+					
+						<td>${fieldValue(bean: proveedorInstance, field: "telefono")}</td>
 					
 					</tr>
 				</g:each>

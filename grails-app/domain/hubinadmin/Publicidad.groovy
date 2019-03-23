@@ -2,6 +2,7 @@ package hubinadmin
 
 class Publicidad {
 
+	Integer id
 	boolean activa
 	Integer prioridad
 	byte[] data
@@ -17,5 +18,6 @@ class Publicidad {
 
 	static mapping = {
 		version false
+		fechaAlta column: "fechaAlta"
 	}
 }

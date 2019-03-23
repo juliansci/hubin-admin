@@ -2,6 +2,7 @@ package hubinadmin
 
 class Idioma {
 
+	Integer id
     String nombre
 	String code
 

@@ -2,15 +2,6 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'nombre', 'error')} required">
-	<label for="nombre">
-		<g:message code="objetivo.nombre.label" default="Nombre" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="nombre" maxlength="30" required="" value="${objetivoInstance?.nombre}"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'descripcion', 'error')} ">
 	<label for="descripcion">
 		<g:message code="objetivo.descripcion.label" default="Descripcion" />
@@ -20,12 +11,30 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'ptosTotales', 'error')} required">
-	<label for="ptosTotales">
-		<g:message code="objetivo.ptosTotales.label" default="Ptos Totales" />
+<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'nombre', 'error')} required">
+	<label for="nombre">
+		<g:message code="objetivo.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="ptosTotales" type="number" value="${objetivoInstance.ptosTotales}" required=""/>
+	<g:textField name="nombre" maxlength="30" required="" value="${objetivoInstance?.nombre}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'orden', 'error')} required">
+	<label for="orden">
+		<g:message code="objetivo.orden.label" default="Orden" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="orden" type="number" value="${objetivoInstance.orden}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'tipo', 'error')} ">
+	<label for="tipo">
+		<g:message code="objetivo.tipo.label" default="Tipo" />
+		
+	</label>
+	<g:textField name="tipo" maxlength="200" value="${objetivoInstance?.tipo}"/>
 
 </div>
 
@@ -38,12 +47,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'activa', 'error')} ">
-	<label for="activa">
-		<g:message code="objetivo.activa.label" default="Activa" />
+<div class="fieldcontain ${hasErrors(bean: objetivoInstance, field: 'activo', 'error')} ">
+	<label for="activo">
+		<g:message code="objetivo.activo.label" default="Activo" />
 		
 	</label>
-	<g:checkBox name="activa" value="${objetivoInstance?.activa}" />
+	<g:checkBox name="activo" value="${objetivoInstance?.activo}" />
 
 </div>
 

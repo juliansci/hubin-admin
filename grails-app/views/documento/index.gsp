@@ -32,6 +32,10 @@
 					
 						<g:sortableColumn property="fechaCreacion" title="${message(code: 'documento.fechaCreacion.label', default: 'Fecha Creacion')}" />
 					
+						<g:sortableColumn property="fechaUltModificacion" title="${message(code: 'documento.fechaUltModificacion.label', default: 'Fecha Ult Modificacion')}" />
+					
+						<g:sortableColumn property="eliminado" title="${message(code: 'documento.eliminado.label', default: 'Eliminado')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -45,6 +49,10 @@
 						<td>${fieldValue(bean: documentoInstance, field: "descripcion")}</td>
 					
 						<td><g:formatDate date="${documentoInstance.fechaCreacion}" /></td>
+					
+						<td><g:formatDate date="${documentoInstance.fechaUltModificacion}" /></td>
+					
+						<td><g:formatBoolean boolean="${documentoInstance.eliminado}" /></td>
 					
 					</tr>
 				</g:each>

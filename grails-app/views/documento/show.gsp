@@ -59,6 +59,24 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${documentoInstance?.fechaUltModificacion}">
+				<li class="fieldcontain">
+					<span id="fechaUltModificacion-label" class="property-label"><g:message code="documento.fechaUltModificacion.label" default="Fecha Ult Modificacion" /></span>
+					
+						<span class="property-value" aria-labelledby="fechaUltModificacion-label"><g:formatDate date="${documentoInstance?.fechaUltModificacion}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${documentoInstance?.eliminado}">
+				<li class="fieldcontain">
+					<span id="eliminado-label" class="property-label"><g:message code="documento.eliminado.label" default="Eliminado" /></span>
+					
+						<span class="property-value" aria-labelledby="eliminado-label"><g:formatBoolean boolean="${documentoInstance?.eliminado}" /></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:documentoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

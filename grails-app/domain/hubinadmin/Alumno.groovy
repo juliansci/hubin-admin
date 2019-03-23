@@ -2,6 +2,7 @@ package hubinadmin
 
 public class Alumno {
 	
+	Integer id
 	Integer dni
 	String email
 	Date fechaNac

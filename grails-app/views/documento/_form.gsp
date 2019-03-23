@@ -38,3 +38,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: documentoInstance, field: 'fechaUltModificacion', 'error')} ">
+	<label for="fechaUltModificacion">
+		<g:message code="documento.fechaUltModificacion.label" default="Fecha Ult Modificacion" />
+		
+	</label>
+	<g:datePicker name="fechaUltModificacion" precision="day"  value="${documentoInstance?.fechaUltModificacion}" default="none" noSelection="['': '']" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: documentoInstance, field: 'eliminado', 'error')} ">
+	<label for="eliminado">
+		<g:message code="documento.eliminado.label" default="Eliminado" />
+		
+	</label>
+	<g:checkBox name="eliminado" value="${documentoInstance?.eliminado}" />
+
+</div>
+

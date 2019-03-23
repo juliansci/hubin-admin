@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list objetivo">
 			
-				<g:if test="${objetivoInstance?.nombre}">
-				<li class="fieldcontain">
-					<span id="nombre-label" class="property-label"><g:message code="objetivo.nombre.label" default="Nombre" /></span>
-					
-						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${objetivoInstance}" field="nombre"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${objetivoInstance?.descripcion}">
 				<li class="fieldcontain">
 					<span id="descripcion-label" class="property-label"><g:message code="objetivo.descripcion.label" default="Descripcion" /></span>
@@ -41,11 +32,29 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${objetivoInstance?.ptosTotales}">
+				<g:if test="${objetivoInstance?.nombre}">
 				<li class="fieldcontain">
-					<span id="ptosTotales-label" class="property-label"><g:message code="objetivo.ptosTotales.label" default="Ptos Totales" /></span>
+					<span id="nombre-label" class="property-label"><g:message code="objetivo.nombre.label" default="Nombre" /></span>
 					
-						<span class="property-value" aria-labelledby="ptosTotales-label"><g:fieldValue bean="${objetivoInstance}" field="ptosTotales"/></span>
+						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${objetivoInstance}" field="nombre"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${objetivoInstance?.orden}">
+				<li class="fieldcontain">
+					<span id="orden-label" class="property-label"><g:message code="objetivo.orden.label" default="Orden" /></span>
+					
+						<span class="property-value" aria-labelledby="orden-label"><g:fieldValue bean="${objetivoInstance}" field="orden"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${objetivoInstance?.tipo}">
+				<li class="fieldcontain">
+					<span id="tipo-label" class="property-label"><g:message code="objetivo.tipo.label" default="Tipo" /></span>
+					
+						<span class="property-value" aria-labelledby="tipo-label"><g:fieldValue bean="${objetivoInstance}" field="tipo"/></span>
 					
 				</li>
 				</g:if>
@@ -59,11 +68,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${objetivoInstance?.activa}">
+				<g:if test="${objetivoInstance?.activo}">
 				<li class="fieldcontain">
-					<span id="activa-label" class="property-label"><g:message code="objetivo.activa.label" default="Activa" /></span>
+					<span id="activo-label" class="property-label"><g:message code="objetivo.activo.label" default="Activo" /></span>
 					
-						<span class="property-value" aria-labelledby="activa-label"><g:formatBoolean boolean="${objetivoInstance?.activa}" /></span>
+						<span class="property-value" aria-labelledby="activo-label"><g:formatBoolean boolean="${objetivoInstance?.activo}" /></span>
 					
 				</li>
 				</g:if>

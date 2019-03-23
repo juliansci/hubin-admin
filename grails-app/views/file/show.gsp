@@ -32,9 +32,18 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${fileInstance?.data}">
+<%--				<g:if test="${fileInstance?.data}">--%>
+<%--				<li class="fieldcontain">--%>
+<%--					<span id="data-label" class="property-label"><g:message code="file.data.label" default="Data" /></span>--%>
+<%--					--%>
+<%--				</li>--%>
+<%--				</g:if>--%>
+			
+				<g:if test="${fileInstance?.fecha}">
 				<li class="fieldcontain">
-					<span id="data-label" class="property-label"><g:message code="file.data.label" default="Data" /></span>
+					<span id="fecha-label" class="property-label"><g:message code="file.fecha.label" default="Fecha" /></span>
+					
+						<span class="property-value" aria-labelledby="fecha-label"><g:formatDate date="${fileInstance?.fecha}" /></span>
 					
 				</li>
 				</g:if>

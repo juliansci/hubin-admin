@@ -2,16 +2,19 @@ package hubinadmin
 
 class Entidad {
 
+	Integer id
 	String cuit
 	String nombre
+	String nombreCorto
 	String direccion
-	Integer telefono
+	String telefono
 	String email
 	String code
 	boolean activa
 
 	static constraints = {
 		cuit unique: true, size: 1..30, blank: false, nullable: false
+		nombre unique: true, size: 1..30, blank: false, nullable: false
 		nombre unique: true, size: 1..30, blank: false, nullable: false
 		direccion size: 1..50, blank: true, nullable: true
 		telefono nullable: true
@@ -21,5 +24,6 @@ class Entidad {
 
 	static mapping = {
 		version false
+		nombreCorto column: "nombreCorto"
 	}
 }

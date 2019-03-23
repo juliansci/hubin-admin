@@ -24,15 +24,17 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="nombre" title="${message(code: 'objetivo.nombre.label', default: 'Nombre')}" />
-					
 						<g:sortableColumn property="descripcion" title="${message(code: 'objetivo.descripcion.label', default: 'Descripcion')}" />
 					
-						<g:sortableColumn property="ptosTotales" title="${message(code: 'objetivo.ptosTotales.label', default: 'Ptos Totales')}" />
+						<g:sortableColumn property="nombre" title="${message(code: 'objetivo.nombre.label', default: 'Nombre')}" />
+					
+						<g:sortableColumn property="orden" title="${message(code: 'objetivo.orden.label', default: 'Orden')}" />
+					
+						<g:sortableColumn property="tipo" title="${message(code: 'objetivo.tipo.label', default: 'Tipo')}" />
 					
 						<th><g:message code="objetivo.proveedor.label" default="Proveedor" /></th>
 					
-						<g:sortableColumn property="activa" title="${message(code: 'objetivo.activa.label', default: 'Activa')}" />
+						<g:sortableColumn property="activo" title="${message(code: 'objetivo.activo.label', default: 'Activo')}" />
 					
 					</tr>
 				</thead>
@@ -40,15 +42,17 @@
 				<g:each in="${objetivoInstanceList}" status="i" var="objetivoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${objetivoInstance.id}">${fieldValue(bean: objetivoInstance, field: "nombre")}</g:link></td>
+						<td><g:link action="show" id="${objetivoInstance.id}">${fieldValue(bean: objetivoInstance, field: "descripcion")}</g:link></td>
 					
-						<td>${fieldValue(bean: objetivoInstance, field: "descripcion")}</td>
+						<td>${fieldValue(bean: objetivoInstance, field: "nombre")}</td>
 					
-						<td>${fieldValue(bean: objetivoInstance, field: "ptosTotales")}</td>
+						<td>${fieldValue(bean: objetivoInstance, field: "orden")}</td>
+					
+						<td>${fieldValue(bean: objetivoInstance, field: "tipo")}</td>
 					
 						<td>${fieldValue(bean: objetivoInstance, field: "proveedor")}</td>
 					
-						<td><g:formatBoolean boolean="${objetivoInstance.activa}" /></td>
+						<td><g:formatBoolean boolean="${objetivoInstance.activo}" /></td>
 					
 					</tr>
 				</g:each>

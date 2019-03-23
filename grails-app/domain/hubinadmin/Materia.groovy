@@ -2,6 +2,7 @@ package hubinadmin
 
 class Materia {
 	
+	Integer id
 	String nombre
 	String code
 	boolean destacada

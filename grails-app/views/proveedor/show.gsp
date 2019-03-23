@@ -32,29 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${proveedorInstance?.razonSocial}">
-				<li class="fieldcontain">
-					<span id="razonSocial-label" class="property-label"><g:message code="proveedor.razonSocial.label" default="Razon Social" /></span>
-					
-						<span class="property-value" aria-labelledby="razonSocial-label"><g:fieldValue bean="${proveedorInstance}" field="razonSocial"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${proveedorInstance?.direccion}">
 				<li class="fieldcontain">
 					<span id="direccion-label" class="property-label"><g:message code="proveedor.direccion.label" default="Direccion" /></span>
 					
 						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${proveedorInstance}" field="direccion"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${proveedorInstance?.telefono}">
-				<li class="fieldcontain">
-					<span id="telefono-label" class="property-label"><g:message code="proveedor.telefono.label" default="Telefono" /></span>
-					
-						<span class="property-value" aria-labelledby="telefono-label"><g:fieldValue bean="${proveedorInstance}" field="telefono"/></span>
 					
 				</li>
 				</g:if>
@@ -68,24 +50,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${proveedorInstance?.publicidades}">
+				<g:if test="${proveedorInstance?.razonSocial}">
 				<li class="fieldcontain">
-					<span id="publicidades-label" class="property-label"><g:message code="proveedor.publicidades.label" default="Publicidades" /></span>
+					<span id="razonSocial-label" class="property-label"><g:message code="proveedor.razonSocial.label" default="Razon Social" /></span>
 					
-						<g:each in="${proveedorInstance.publicidades}" var="p">
-						<span class="property-value" aria-labelledby="publicidades-label"><g:link controller="publicidad" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="razonSocial-label"><g:fieldValue bean="${proveedorInstance}" field="razonSocial"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${proveedorInstance?.objetivos}">
+				<g:if test="${proveedorInstance?.telefono}">
 				<li class="fieldcontain">
-					<span id="objetivos-label" class="property-label"><g:message code="proveedor.objetivos.label" default="Objetivos" /></span>
+					<span id="telefono-label" class="property-label"><g:message code="proveedor.telefono.label" default="Telefono" /></span>
 					
-						<g:each in="${proveedorInstance.objetivos}" var="o">
-						<span class="property-value" aria-labelledby="objetivos-label"><g:link controller="objetivo" action="show" id="${o.id}">${o?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="telefono-label"><g:fieldValue bean="${proveedorInstance}" field="telefono"/></span>
 					
 				</li>
 				</g:if>

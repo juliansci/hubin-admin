@@ -26,7 +26,9 @@
 					
 						<g:sortableColumn property="extension" title="${message(code: 'file.extension.label', default: 'Extension')}" />
 					
-						<g:sortableColumn property="data" title="${message(code: 'file.data.label', default: 'Data')}" />
+<%--						<g:sortableColumn property="data" title="${message(code: 'file.data.label', default: 'Data')}" />--%>
+					
+						<g:sortableColumn property="fecha" title="${message(code: 'file.fecha.label', default: 'Fecha')}" />
 					
 					</tr>
 				</thead>
@@ -36,8 +38,10 @@
 					
 						<td><g:link action="show" id="${fileInstance.id}">${fieldValue(bean: fileInstance, field: "extension")}</g:link></td>
 					
-						<!--<td>${fieldValue(bean: fileInstance, field: "data")}</td>-->
-
+<%--						<td>${fieldValue(bean: fileInstance, field: "data")}</td>--%>
+					
+						<td><g:formatDate date="${fileInstance.fecha}" /></td>
+					
 					</tr>
 				</g:each>
 				</tbody>

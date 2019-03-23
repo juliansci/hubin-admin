@@ -20,3 +20,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: fileInstance, field: 'fecha', 'error')} required">
+	<label for="fecha">
+		<g:message code="file.fecha.label" default="Fecha" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="fecha" precision="day"  value="${fileInstance?.fecha}"  />
+
+</div>
+

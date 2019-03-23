@@ -2,24 +2,23 @@ package hubinadmin
 
 class Proveedor {
 	
+	Integer id
 	String cuit	
-	String razonSocial	
 	String direccion
-	Integer telefono
 	String email
-	static hasMany = [publicidades : Publicidad, objetivos : Objetivo]
+	String razonSocial	
+	Integer telefono
 
     static constraints = {
 		cuit unique: true, size: 1..30, blank: false, nullable: false
-		razonSocial unique: true, size: 1..30, blank: false, nullable: false
 		direccion size: 1..50, blank: true, nullable: true
-		telefono nullable: true
 		email blank: false, nullable: true, size: 1..30, email: true
-		publicidades nullable: true
-		objetivos nullable: true
+		razonSocial unique: true, size: 1..30, blank: false, nullable: false		
+		telefono nullable: true
     }
 	
 	static mapping = {
 		version false
+		razonSocial column: "razonSocial"
 	}
 }

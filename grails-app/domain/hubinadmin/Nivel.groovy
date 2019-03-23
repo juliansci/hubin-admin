@@ -2,6 +2,7 @@ package hubinadmin
 
 class Nivel {
 
+	Integer id
     String nombre
 	String code
 
