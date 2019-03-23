@@ -7,7 +7,7 @@
 		<g:message code="entidad.cuit.label" default="Cuit" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="cuit" maxlength="30" required="" value="${entidadInstance?.cuit}"/>
+	<g:textArea name="cuit" cols="40" rows="5" maxlength="255" required="" value="${entidadInstance?.cuit}"/>
 
 </div>
 
@@ -16,7 +16,16 @@
 		<g:message code="entidad.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" maxlength="30" required="" value="${entidadInstance?.nombre}"/>
+	<g:textArea name="nombre" cols="40" rows="5" maxlength="255" required="" value="${entidadInstance?.nombre}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: entidadInstance, field: 'nombreCorto', 'error')} required">
+	<label for="nombreCorto">
+		<g:message code="entidad.nombreCorto.label" default="Nombre Corto" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textArea name="nombreCorto" cols="40" rows="5" maxlength="255" required="" value="${entidadInstance?.nombreCorto}"/>
 
 </div>
 
@@ -25,7 +34,16 @@
 		<g:message code="entidad.direccion.label" default="Direccion" />
 		
 	</label>
-	<g:textField name="direccion" maxlength="50" value="${entidadInstance?.direccion}"/>
+	<g:textArea name="direccion" cols="40" rows="5" maxlength="255" value="${entidadInstance?.direccion}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: entidadInstance, field: 'descripcion', 'error')} ">
+	<label for="descripcion">
+		<g:message code="entidad.descripcion.label" default="Descripcion" />
+		
+	</label>
+	<g:textArea name="descripcion" cols="40" rows="5" maxlength="255" value="${entidadInstance?.descripcion}"/>
 
 </div>
 
@@ -34,7 +52,7 @@
 		<g:message code="entidad.telefono.label" default="Telefono" />
 		
 	</label>
-	<g:field name="telefono" type="number" value="${entidadInstance.telefono}"/>
+	<g:textArea name="telefono" cols="40" rows="5" maxlength="255" value="${entidadInstance?.telefono}"/>
 
 </div>
 
@@ -43,7 +61,7 @@
 		<g:message code="entidad.email.label" default="Email" />
 		
 	</label>
-	<g:field type="email" name="email" maxlength="30" value="${entidadInstance?.email}"/>
+	<g:textArea name="email" cols="40" rows="5" maxlength="255" value="${entidadInstance?.email}"/>
 
 </div>
 
@@ -52,7 +70,7 @@
 		<g:message code="entidad.code.label" default="Code" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="code" maxlength="30" required="" value="${entidadInstance?.code}"/>
+	<g:textArea name="code" cols="40" rows="5" maxlength="255" required="" value="${entidadInstance?.code}"/>
 
 </div>
 

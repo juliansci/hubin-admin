@@ -9,8 +9,8 @@ class Materia {
 	File foto
 
 	static constraints = {
-		nombre size: 1..30, blank: false, nullable: false
-		code unique: true, size: 1..30, blank: false, nullable: false
+		nombre size: 1..255, blank: false, nullable: false
+		code unique: true, size: 1..255, blank: false, nullable: false
 		foto nullable: true
 	}
 

@@ -7,7 +7,7 @@
 		<g:message code="materia.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" maxlength="30" required="" value="${materiaInstance?.nombre}"/>
+	<g:textArea name="nombre" cols="40" rows="5" maxlength="255" required="" value="${materiaInstance?.nombre}"/>
 
 </div>
 
@@ -16,7 +16,7 @@
 		<g:message code="materia.code.label" default="Code" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="code" maxlength="30" required="" value="${materiaInstance?.code}"/>
+	<g:textArea name="code" cols="40" rows="5" maxlength="255" required="" value="${materiaInstance?.code}"/>
 
 </div>
 

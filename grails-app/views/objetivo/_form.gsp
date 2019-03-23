@@ -7,7 +7,7 @@
 		<g:message code="objetivo.descripcion.label" default="Descripcion" />
 		
 	</label>
-	<g:textField name="descripcion" maxlength="200" value="${objetivoInstance?.descripcion}"/>
+	<g:textArea name="descripcion" cols="40" rows="5" maxlength="255" value="${objetivoInstance?.descripcion}"/>
 
 </div>
 
@@ -16,7 +16,7 @@
 		<g:message code="objetivo.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" maxlength="30" required="" value="${objetivoInstance?.nombre}"/>
+	<g:textArea name="nombre" cols="40" rows="5" maxlength="255" required="" value="${objetivoInstance?.nombre}"/>
 
 </div>
 
@@ -34,7 +34,7 @@
 		<g:message code="objetivo.tipo.label" default="Tipo" />
 		
 	</label>
-	<g:textField name="tipo" maxlength="200" value="${objetivoInstance?.tipo}"/>
+	<g:textArea name="tipo" cols="40" rows="5" maxlength="255" value="${objetivoInstance?.tipo}"/>
 
 </div>
 

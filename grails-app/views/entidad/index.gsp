@@ -28,13 +28,13 @@
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'entidad.nombre.label', default: 'Nombre')}" />
 					
+						<g:sortableColumn property="nombreCorto" title="${message(code: 'entidad.nombreCorto.label', default: 'Nombre Corto')}" />
+					
 						<g:sortableColumn property="direccion" title="${message(code: 'entidad.direccion.label', default: 'Direccion')}" />
 					
+						<g:sortableColumn property="descripcion" title="${message(code: 'entidad.descripcion.label', default: 'Descripcion')}" />
+					
 						<g:sortableColumn property="telefono" title="${message(code: 'entidad.telefono.label', default: 'Telefono')}" />
-					
-						<g:sortableColumn property="email" title="${message(code: 'entidad.email.label', default: 'Email')}" />
-					
-						<g:sortableColumn property="code" title="${message(code: 'entidad.code.label', default: 'Code')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +46,13 @@
 					
 						<td>${fieldValue(bean: entidadInstance, field: "nombre")}</td>
 					
+						<td>${fieldValue(bean: entidadInstance, field: "nombreCorto")}</td>
+					
 						<td>${fieldValue(bean: entidadInstance, field: "direccion")}</td>
 					
+						<td>${fieldValue(bean: entidadInstance, field: "descripcion")}</td>
+					
 						<td>${fieldValue(bean: entidadInstance, field: "telefono")}</td>
-					
-						<td>${fieldValue(bean: entidadInstance, field: "email")}</td>
-					
-						<td>${fieldValue(bean: entidadInstance, field: "code")}</td>
 					
 					</tr>
 				</g:each>

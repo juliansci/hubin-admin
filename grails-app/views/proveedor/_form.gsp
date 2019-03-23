@@ -7,7 +7,7 @@
 		<g:message code="proveedor.cuit.label" default="Cuit" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="cuit" maxlength="30" required="" value="${proveedorInstance?.cuit}"/>
+	<g:textArea name="cuit" cols="40" rows="5" maxlength="255" required="" value="${proveedorInstance?.cuit}"/>
 
 </div>
 
@@ -16,7 +16,7 @@
 		<g:message code="proveedor.direccion.label" default="Direccion" />
 		
 	</label>
-	<g:textField name="direccion" maxlength="50" value="${proveedorInstance?.direccion}"/>
+	<g:textArea name="direccion" cols="40" rows="5" maxlength="255" value="${proveedorInstance?.direccion}"/>
 
 </div>
 
@@ -25,7 +25,7 @@
 		<g:message code="proveedor.email.label" default="Email" />
 		
 	</label>
-	<g:field type="email" name="email" maxlength="30" value="${proveedorInstance?.email}"/>
+	<g:textArea name="email" cols="40" rows="5" maxlength="255" value="${proveedorInstance?.email}"/>
 
 </div>
 
@@ -34,7 +34,7 @@
 		<g:message code="proveedor.razonSocial.label" default="Razon Social" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="razonSocial" maxlength="30" required="" value="${proveedorInstance?.razonSocial}"/>
+	<g:textArea name="razonSocial" cols="40" rows="5" maxlength="255" required="" value="${proveedorInstance?.razonSocial}"/>
 
 </div>
 

@@ -41,11 +41,29 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${entidadInstance?.nombreCorto}">
+				<li class="fieldcontain">
+					<span id="nombreCorto-label" class="property-label"><g:message code="entidad.nombreCorto.label" default="Nombre Corto" /></span>
+					
+						<span class="property-value" aria-labelledby="nombreCorto-label"><g:fieldValue bean="${entidadInstance}" field="nombreCorto"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${entidadInstance?.direccion}">
 				<li class="fieldcontain">
 					<span id="direccion-label" class="property-label"><g:message code="entidad.direccion.label" default="Direccion" /></span>
 					
 						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${entidadInstance}" field="direccion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${entidadInstance?.descripcion}">
+				<li class="fieldcontain">
+					<span id="descripcion-label" class="property-label"><g:message code="entidad.descripcion.label" default="Descripcion" /></span>
+					
+						<span class="property-value" aria-labelledby="descripcion-label"><g:fieldValue bean="${entidadInstance}" field="descripcion"/></span>
 					
 				</li>
 				</g:if>
